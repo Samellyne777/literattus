@@ -1,0 +1,242 @@
+/* Estilo global */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #967162;
+    color: #755d51;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Cabeçalho e logomarca */
+header {
+    background-color: #755d51;
+    color: #fbebe4;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+header .logo img {
+    max-width: 80px;
+    display: block;
+    margin: 0 auto 1rem auto;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.auth {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.auth button {
+    background-color: #b2a198;
+    border: none;
+    color: #fbebe4;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.auth button:hover {
+    background-color: #948c84;
+}
+
+.auth .hidden {
+    display: none;
+}
+
+/* Seção Introdutória */
+#intro-section {
+    background-color: #93796a;
+    color: #fbebe4;
+    padding: 2rem;
+    margin: 2rem 0;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#intro-section h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+#intro-section p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+/* Seção de Livros */
+#books-list {
+    margin: 2rem;
+}
+
+#books-list h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #755d51;
+}
+
+.book-item {
+    background-color: #ffffff;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.book-item:hover {
+    transform: scale(1.02);
+}
+
+.book-item h3 {
+    margin: 0 0 0.5rem;
+    color: #755d51;
+}
+
+.book-item p {
+    margin: 0.5rem 0;
+    color: #948c84;
+}
+
+.book-item button {
+    background-color: #857167;
+    border: none;
+    color: #fbebe4;
+    padding: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.book-item button:hover {
+    background-color: #948c84;
+}
+
+/* Formulário de Cadastro de Livros */
+#book-form {
+    background-color: #988277;
+    color: #fbebe4;
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#book-form h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #fbebe4;
+    margin-bottom: 1rem;
+}
+
+#book-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#book-form input,
+#book-form textarea,
+#book-form button {
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#book-form input,
+#book-form textarea {
+    background-color: #fbebe4;
+    color: #755d51;
+}
+
+#book-form button {
+    background-color: #605048;
+    color: #fbebe4;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#book-form button:hover {
+    background-color: #755d51;
+}
+
+/* Seção de Comentários */
+.hidden {
+    display: none;
+}
+
+#books-list .comments {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    border-top: 1px solid #948c84;
+}
+
+#books-list .comments ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#books-list .comments li {
+    background-color: #fbebe4;
+    color: #755d51;
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin: 0.5rem 0;
+}
+
+#books-list .comments input,
+#books-list .comments textarea {
+    width: calc(100% - 1rem);
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #b2a198;
+}
+
+#books-list .comments button {
+    background-color: #948c84;
+    color: #70361d;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#books-list .comments button:hover {
+    background-color: #755d51;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    body {
+        font-size: 90%;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    #book-form {
+        margin: 1rem;
+    }
+
+    #intro-section {
+        margin: 1rem 0;
+    }
+}

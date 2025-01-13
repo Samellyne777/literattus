@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clube de Leitura Litteratus</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logomarca do Clube de Leitura Litteratus">
+        </div>
+        <h1>Clube de Leitura Litteratus</h1>
+        <div class="auth">
+            <span id="user-name" class="hidden"></span>
+            <button id="login-button">Login</button>
+            <button id="signup-button">Cadastro</button>
+            <button id="logout-button" class="hidden">Sair</button>
+        </div>
+    </header>
+    <main>
+
+        <section id="intro-section">
+            <h2>Bem-vindo ao Clube de Leitura Litteratus</h2>
+            <p>
+                Somos um grupo apaixonado por livros e filmes, promovendo práticas educativas e ações culturais. 
+                Aqui você pode descobrir obras incríveis, ler resenhas e resumos, e compartilhar suas opiniões 
+                com outros entusiastas da leitura. Junte-se a nós e explore um mundo de possibilidades literárias!
+            </p>
+        </section>
+
+        <section id="books-list">
+            <h2>Livros Cadastrados</h2>
+            
+        </section>
+        <section id="book-form">
+            <h2>Cadastrar Novo Livro</h2>
+            <form>
+                <input type="text" id="title" placeholder="Título">
+                <input type="text" id="author" placeholder="Autor">
+                <input type="text" id="genre" placeholder="Gênero">
+                <textarea id="description" placeholder="Descrição"></textarea>
+                <button type="submit">Adicionar Livro</button>
+            </form>
+        </section>
+    </main>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
